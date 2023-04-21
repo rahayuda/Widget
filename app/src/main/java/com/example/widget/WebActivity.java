@@ -27,6 +27,6 @@ public class WebActivity extends AppCompatActivity {
         // Baris di bawah untuk menambahkan scrollbar di dalam WebView-nya
         webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
         webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://oase.unud.ac.id/");
+        webView.loadUrl("https://handwritten-recognition.000webhostapp.com/");
     }
 }
