@@ -1,32 +1,29 @@
-package com.example.widget;
+package com.example.widget
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle
+import android.view.View
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import androidx.appcompat.app.AppCompatActivity
 
-import android.os.Bundle;
-import android.view.View;
-import android.webkit.WebView;
-import android.webkit.WebViewClient;
+class WebActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_web)
 
-public class WebActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web);
-
-        WebView webView = (WebView) findViewById(R.id.webview);
-        webView.getSettings().setLoadsImagesAutomatically(true);
-        webView.getSettings().setJavaScriptEnabled(true);
-        webView.getSettings().setDomStorageEnabled(true);
+        val webView = findViewById<View>(R.id.webview) as WebView
+        webView.settings.loadsImagesAutomatically = true
+        webView.settings.javaScriptEnabled = true
+        webView.settings.domStorageEnabled = true
 
         // Tiga baris di bawah ini agar laman yang dimuat dapat
         // melakukan zoom.
-        webView.getSettings().setSupportZoom(true);
-        webView.getSettings().setBuiltInZoomControls(true);
-        webView.getSettings().setDisplayZoomControls(false);
+        webView.settings.setSupportZoom(true)
+        webView.settings.builtInZoomControls = true
+        webView.settings.displayZoomControls = false
         // Baris di bawah untuk menambahkan scrollbar di dalam WebView-nya
-        webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.setWebViewClient(new WebViewClient());
-        webView.loadUrl("https://handwritten-recognition.000webhostapp.com/");
+        webView.scrollBarStyle = View.SCROLLBARS_INSIDE_OVERLAY
+        webView.webViewClient = WebViewClient()
+        webView.loadUrl("https://wokwi-smart-farming.vercel.app/")
     }
 }

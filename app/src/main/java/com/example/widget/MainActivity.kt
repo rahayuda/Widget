@@ -1,41 +1,38 @@
-package com.example.widget;
+package com.example.widget
 
-import androidx.appcompat.app.AppCompatActivity;
+import android.content.Intent
+import android.os.Bundle
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 
-import android.content.Intent;
-import android.os.Bundle;
-import android.view.View;
-
-public class MainActivity extends AppCompatActivity {
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
     }
 
-    public void video(View view) {
-        Intent video = new Intent(MainActivity.this, VideoActivity.class);
-        startActivity(video);
+    fun video(view: View?) {
+        val video = Intent(this@MainActivity, VideoActivity::class.java)
+        startActivity(video)
     }
 
-    public void web(View view) {
-        Intent web = new Intent(MainActivity.this, WebActivity.class);
-        startActivity(web);
+    fun web(view: View?) {
+        val web = Intent(this@MainActivity, WebActivity::class.java)
+        startActivity(web)
     }
 
-    public void image(View view) {
-        Intent image = new Intent(MainActivity.this, ImageActivity.class);
-        startActivity(image);
+    fun image(view: View?) {
+        val image = Intent(this@MainActivity, ImageActivity::class.java)
+        startActivity(image)
     }
 
-    public void calendar(View view) {
-        Intent calendar = new Intent(MainActivity.this, CalendarActivity.class);
-        startActivity(calendar);
+    fun calendar(view: View?) {
+        val calendar = Intent(this@MainActivity, CalendarActivity::class.java)
+        startActivity(calendar)
     }
 
-    public void other(View view) {
-        Intent other = new Intent(MainActivity.this, OtherActivity.class);
-        startActivity(other);
+    fun other(view: View?) {
+        val other = Intent(this@MainActivity, OtherActivity::class.java)
+        startActivity(other)
     }
 }

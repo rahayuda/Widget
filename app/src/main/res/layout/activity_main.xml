@@ -4,8 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@drawable/backtheme"
+    android:orientation="vertical"
     android:padding="80dp"
     tools:context=".MainActivity">
 
@@ -13,16 +13,16 @@
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Widget"
         android:fontFamily="@font/alata"
+        android:text="Widget"
         android:textSize="50dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="widget menggunakan intent"
         android:fontFamily="@font/alata"
+        android:text="widget menggunakan intent"
         android:textSize="14dp" />
 
     <Button
@@ -57,12 +57,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="video"
-        android:text="Video View"
-        android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:background="@drawable/custom_button"
-        android:fontFamily="@font/alata"/>
+        android:fontFamily="@font/alata"
+        android:onClick="video"
+        android:text="Video View"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/calendar"
@@ -70,12 +70,12 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="calendar"
-        android:text="Calendar View"
-        android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:background="@drawable/custom_button"
-        android:fontFamily="@font/alata"/>
+        android:fontFamily="@font/alata"
+        android:onClick="calendar"
+        android:text="Calendar View"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/other"
@@ -83,11 +83,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:onClick="other"
-        android:text="Other"
-        android:textAllCaps="false"
         android:layout_marginTop="10dp"
         android:background="@drawable/custom_button"
-        android:fontFamily="@font/alata"/>
+        android:fontFamily="@font/alata"
+        android:onClick="other"
+        android:text="Other"
+        android:textAllCaps="false" />
 
 </LinearLayout>
