@@ -4,7 +4,8 @@
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/backtheme"
+    android:background="@drawable/curved_background"
+    tools:uiMode="night"
     android:orientation="vertical"
     android:padding="80dp"
     tools:context=".MainActivity">
@@ -14,6 +15,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
+        android:textColor="@color/text"
         android:text="Widget"
         android:textSize="50dp" />
 
@@ -22,6 +24,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/alata"
+        android:textColor="@color/text"
         android:text="widget menggunakan intent"
         android:textSize="14dp" />
 

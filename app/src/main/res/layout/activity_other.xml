@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/backtheme"
+    android:background="@drawable/curved_background"
+    tools:uiMode="night"
     android:padding="20dp"
     tools:context=".ImageActivity">
 
@@ -16,6 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Other"
         android:fontFamily="@font/alata"
+        android:textColor="@color/text"
         android:textSize="50dp"
         android:layout_marginTop="60dp"
         android:layout_marginLeft="60dp"/>
@@ -26,6 +28,7 @@
         android:layout_height="wrap_content"
         android:text="beberapa widget lainnya"
         android:fontFamily="@font/alata"
+        android:textColor="@color/text"
         android:textSize="14dp"
         android:layout_marginLeft="60dp"/>
 
@@ -37,7 +40,7 @@
         android:text="Progress Bar"
         android:fontFamily="@font/alata"
         android:textSize="14dp"
-        android:textColor="@color/dream"
+        android:textColor="@color/curve_dream"
         android:layout_marginTop="150dp"
         android:layout_marginLeft="20dp"/>
 
@@ -57,7 +60,7 @@
         android:text="Rating Bar"
         android:fontFamily="@font/alata"
         android:textSize="14dp"
-        android:textColor="@color/dream"
+        android:textColor="@color/curve_dream"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
@@ -80,7 +83,7 @@
         android:text="Horizontal Divider"
         android:fontFamily="@font/alata"
         android:textSize="14dp"
-        android:textColor="@color/dream"
+        android:textColor="@color/curve_dream"
         android:layout_marginTop="150dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>
@@ -89,7 +92,7 @@
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/dream"
+        android:background="@color/curve_dream"
         android:layout_marginTop="10dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"/>

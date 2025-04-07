@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/backtheme"
+    android:background="@drawable/curved_background"
+    tools:uiMode="night"
     android:padding="20dp"
     tools:context=".ImageActivity">
 
@@ -17,6 +18,7 @@
         android:layout_marginLeft="60dp"
         android:layout_marginTop="60dp"
         android:fontFamily="@font/alata"
+        android:textColor="@color/text"
         android:text="Image"
         android:textSize="50dp" />
 
@@ -26,6 +28,7 @@
         android:layout_height="wrap_content"
         android:text="image galeri dengan layout"
         android:fontFamily="@font/alata"
+        android:textColor="@color/text"
         android:textSize="14dp"
         android:layout_marginLeft="60dp"/>
 
@@ -35,10 +38,10 @@
         android:layout_height="wrap_content"
         android:text="Horizontal Scroll View"
         android:fontFamily="@font/alata"
-        android:textColor="@color/dream"
+        android:textColor="@color/curve_dream"
         android:textSize="14dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="110dp"/>
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -53,7 +56,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="5dp">
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -64,7 +67,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            app:cardCornerRadius="10dp"
+            app:cardCornerRadius="5dp"
             android:layout_marginLeft="10dp">
             <ImageView
                 android:layout_width="match_parent"
@@ -76,7 +79,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            app:cardCornerRadius="10dp"
+            app:cardCornerRadius="5dp"
             android:layout_marginLeft="10dp">
             <ImageView
                 android:layout_width="match_parent"
@@ -91,7 +94,7 @@
         android:id="@+id/divider2"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/dream"
+        android:background="@color/curve_dream"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp" />
 
@@ -101,7 +104,7 @@
         android:layout_height="wrap_content"
         android:text="Vertical Scroll View"
         android:fontFamily="@font/alata"
-        android:textColor="@color/dream"
+        android:textColor="@color/curve_dream"
         android:textSize="14dp"
         android:layout_marginLeft="20dp"
         android:layout_marginTop="10dp"/>
@@ -126,7 +129,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="5dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -138,7 +141,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            app:cardCornerRadius="10dp"
+            app:cardCornerRadius="5dp"
             android:layout_marginLeft="10dp">
 
             <ImageView
@@ -159,7 +162,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            app:cardCornerRadius="10dp">
+            app:cardCornerRadius="5dp">
 
             <ImageView
                 android:layout_width="match_parent"
@@ -171,7 +174,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="150dp"
             android:layout_height="100dp"
-            app:cardCornerRadius="10dp"
+            app:cardCornerRadius="5dp"
             android:layout_marginLeft="10dp">
 
             <ImageView
@@ -192,7 +195,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="5dp">
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -204,7 +207,7 @@
                 <androidx.cardview.widget.CardView
                     android:layout_width="150dp"
                     android:layout_height="100dp"
-                    app:cardCornerRadius="10dp"
+                    app:cardCornerRadius="5dp"
                     android:layout_marginLeft="10dp">
 
                     <ImageView

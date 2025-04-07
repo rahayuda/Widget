@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/backtheme"
+    android:background="@drawable/curved_background"
+    tools:uiMode="night"
     android:padding="20dp"
     tools:context=".ImageActivity">
 
@@ -16,6 +17,7 @@
         android:layout_height="wrap_content"
         android:text="Calendar"
         android:fontFamily="@font/alata"
+        android:textColor="@color/text"
         android:textSize="50dp"
         android:layout_marginTop="60dp"
         android:layout_marginLeft="60dp"/>
@@ -26,6 +28,7 @@
         android:layout_height="wrap_content"
         android:text="simple calendar"
         android:fontFamily="@font/alata"
+        android:textColor="@color/text"
         android:textSize="14dp"
         android:layout_marginLeft="60dp"/>
 
@@ -37,8 +40,8 @@
         android:id="@+id/calendarView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:background="@color/dream"/>
+        android:layout_marginTop="110dp"
+        android:background="@color/curve_dream"/>
     </LinearLayout>
 
 </LinearLayout>
